@@ -1,10 +1,7 @@
-# Big Data Homework - "Alexa, can you handle big data?"
+# Big Data on Amazon Reviews
 
 ### Before You Begin
 
-1. Create a new repository for this project called `big-data-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
 
 3. Inside your local git repository, create a directory for the level of challenge Challenge you choose. Use folder names corresponding to the challenges: **level-1** or  **level-2**.
 
@@ -12,9 +9,6 @@
 
 5. Push the above changes to GitHub or GitLab.
 
-## Note
-
-Keep in mind that this homework is optional! However, you will gain a much greater understanding of ETL processes in Big Data using PySpark and using AWS's Relational Databases if you do complete it.
 
 ## Background
 
@@ -63,48 +57,9 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 
 * Submit a summary of your findings and analysis.
 
-- - -
 
-## Resources
-
-[customer review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
-
-- - -
 
 ## Hints and Considerations
-
-* Be sure that to start each notebook with following code in the first cell and update the Spark version.
-
-```python
-import os
-# Find the latest version of spark 3.0  from http://www-us.apache.org/dist/spark/ and enter as the spark version
-# For example:
-# spark_version = 'spark-3.0.1'
-spark_version = 'spark-3.<spark version>'
-os.environ['SPARK_VERSION']=spark_version
-
-# Install Spark and Java
-!apt-get update
-!apt-get install openjdk-11-jdk-headless -qq > /dev/null
-!wget -q http://www-us.apache.org/dist/spark/$SPARK_VERSION/$SPARK_VERSION-bin-hadoop2.7.tgz
-!tar xf $SPARK_VERSION-bin-hadoop2.7.tgz
-!pip install -q findspark
-
-# Set Environment Variables
-import os
-os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
-os.environ["SPARK_HOME"] = f"/content/{spark_version}-bin-hadoop2.7"
-
-# Start a SparkSession
-import findspark
-findspark.init()
-```
-
-* For connection to Postgres run the following code in the next cell.
-
-```python
-!wget https://jdbc.postgresql.org/download/postgresql-42.2.9.jar
-```
 
 - - -
 
@@ -118,13 +73,6 @@ findspark.init()
 
 * **Important:** Do not upload notebooks that contain your RDS password and endpoint. Be sure to delete them before making your notebook public!
 
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-## Rubric
-
-[Unit 22 Rubric - Big Data Homework - "Alexa, can you handle big data?"](https://docs.google.com/document/d/1H-TBgBUz1jVGG1zvo046GraApmbepVZgYionh-4mNas/edit?usp=sharing)
-
-- - -
 
 ## References
 
