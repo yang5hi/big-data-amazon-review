@@ -2,21 +2,18 @@
 
 ## Background
 
-This project is analyze amazon reviews on vidoe games and lugguges. Each of the dataset contains over 1.5 million rows. The ETL process was performed completely in the cloud and the dataframe was uploaded to an RDS instance. Basic statistical analsis was also performed on one of the dataset.
+This project is analyzing amazon reviews on video games and luggage. Each dataset contains over 1.5 million rows. The ETL process was performed completely in the cloud, and the DataFrame was uploaded to an RDS instance. Basic statistical analysis was also performed on one of the datasets.
 
-### Level 1
+## Level 1
+* Use the schema to create tables in the RDS database with Google Colab notebooks and **extract** two datasets from the list at review dataset, one into each notebook.
+* **Transform** the dataset to fit the tables in the schema file.
+* **Load** the DataFrames that correspond to tables into an RDS instance.
 
-* Use the schema to create tables in the RDS database with Google Colab notebooks and **extract** two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
+## Level 2
 
-* **Transform** the dataset to fit the tables in the [schema file](Resources/schema.sql).
+This part is to check if there is a bias of amazon Vine reviews: https://www.amazon.com/gp/vine/help?ie=UTF8.
 
-* **Load** the DataFrames that correspond to tables into an RDS instance. 
-
-### Level 2 
-
-This part is to check if there is bias of amazon Vine reviews: [https://www.amazon.com/gp/vine/help?ie=UTF8](https://www.amazon.com/gp/vine/help?ie=UTF8).
-
-The vine reviews have higher averages than non-vine averages. The comparison of mean and standard diviation were calculated on both vine reviews and non-vine reviews. The t-test results shows that the two ratings have statistical differences.
+The vine reviews have higher averages than non-vine averages based on analysis. The comparison of mean and standard deviation was calculated on both vine reviews and non-vine reviews. The t-test results show that the two ratings have statistical differences.
 
 
 ## References
