@@ -5,10 +5,11 @@
 This project is analyzing amazon reviews on video games and luggage. Each dataset contains over 1.5 million rows. The ETL process was performed completely in the cloud, and the DataFrame was uploaded to an RDS instance. Basic statistical analysis was also performed on one of the datasets.
 
 ## Level 1
+The setting up of AWS RDS and correctly connecting to local postgresql pgAdmin is the most challenging part of this project. **The ETL** process is:
 * Use the schema to create tables in the RDS database with Google Colab notebooks and **extract** two datasets from the list at review dataset, one into each notebook.
 * **Transform** the dataset to fit the tables in the schema file.
 * **Load** the DataFrames that correspond to tables into an RDS instance.
-* The setting up of aws rds and correctly connect to local postgresql pgAdmin is the most challenging part of this project.
+
 
 ## Level 2
 
