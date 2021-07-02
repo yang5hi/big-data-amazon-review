@@ -6,7 +6,7 @@ This project is analyzing amazon reviews on video games and luggage. Each datase
 
 ## Level 1
 The setting up of AWS RDS and correctly connecting to local postgresql pgAdmin is the most challenging part of this project. **The ETL** process is:
-* Use the schema to create tables in the RDS database with [Google Colab](https://research.google.com › colaboratory) notebooks and **extract** two datasets from the list at review dataset, one into each notebook.
+* Use the schema to create tables in the RDS database with [Google Colab notebnooks](https://colab.research.google.com/notebooks/) and **extract** two datasets from the list at review dataset, one into each notebook.
 * **Transform** the dataset to fit the tables in the schema file.
 * **Load** the DataFrames that correspond to tables into an RDS instance.
 
