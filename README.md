@@ -16,7 +16,7 @@ This project is analyze amazon reviews on vidoe games and lugguges. Each of the 
 
 This part is to check if there is bias of amazon Vine reviews: [https://www.amazon.com/gp/vine/help?ie=UTF8](https://www.amazon.com/gp/vine/help?ie=UTF8).
 
-The comparison of mean and standard diviation were calculated on both vine reviews and non-vine reviews. The t-test results shows that the two ratings have statistical differences.
+The vine reviews have higher averages than non-vine averages. The comparison of mean and standard diviation were calculated on both vine reviews and non-vine reviews. The t-test results shows that the two ratings have statistical differences.
 
 
 ## References
