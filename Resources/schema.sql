@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS 
+	review_id_table,
+	products,
+	customers,
+	vine_table;
+
 CREATE TABLE review_id_table (
   review_id TEXT PRIMARY KEY NOT NULL,
   customer_id INTEGER,
@@ -26,3 +32,7 @@ CREATE TABLE vine_table (
   total_votes INTEGER,
   vine TEXT
 );
+select * from review_id_table;
+select * from customers;
+SELECT * FROM vine_table;
+select * from products;
