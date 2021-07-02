@@ -15,7 +15,7 @@ The setting up of AWS RDS and correctly connecting to local postgresql pgAdmin i
 
 This part is to check if there is a bias of amazon Vine reviews: https://www.amazon.com/gp/vine/help?ie=UTF8.
 
-The vine reviews have higher averages than non-vine averages based on analysis. The comparison of mean and standard deviation was calculated on both vine reviews and non-vine reviews. The t-test results show that the two ratings have statistical differences.
+The comparison of mean and standard deviation was calculated on both vine reviews and non-vine reviews. The vine reviews have higher averages than non-vine averages based on analysis. The t-test results show that the two ratings have statistical differences.
 
 
 ## References
