@@ -8,7 +8,7 @@ This project is analyze amazon reviews on vidoe games and lugguges. Each of the 
 
 * Use the schema to create tables in the RDS database with Google Colab notebooks and **extract** two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
 
-* **Transform** the dataset to fit the tables in the [schema file](../Resources/schema.sql).
+* **Transform** the dataset to fit the tables in the [schema file](Resources/schema.sql).
 
 * **Load** the DataFrames that correspond to tables into an RDS instance. 
 
